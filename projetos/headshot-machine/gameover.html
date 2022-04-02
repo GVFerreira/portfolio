@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Headshot Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script defer>
+        
+    </script>
+</head>
+<body id="corpo">
+    <div id="container-gameover">
+        <!-- <div id="caixa-placar"><div id="placar"></div></div> -->
+        <div id="gameover">
+            <img id="img-gameover" src="img/gameover.png">
+        </div>
+        <div id="restart">
+            <button id="btn-restart" onclick="window.location.href = 'index.html'">Reiniciar game</button>
+        </div>
+    </div>
+    <script>
+        var placar = document.getElementById('placar');
+        placar.innerHTML = 'Seu tempo foi de: ' + tempo;
+    </script>
+</body>
+</html>

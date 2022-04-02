@@ -1,0 +1,253 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2C2C2C;
+  padding-bottom: 50px;
+}
+
+/*Cabeçalho com menu de navegação*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #2C2C2C;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+header #menu {
+  width: 80%;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header #menu ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* header #menu ul li {
+
+} */
+
+header #menu ul li a {
+  color: #FFFFFF;
+}
+
+header #menu ul #btn-contato {
+  background-color: #0974B0;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px 3px #0974B0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/*Fim do cabeçalho*/
+
+#card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*Começo do CONTAINER1*/
+#card #container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+  width: 80%;
+}
+
+#card #container1 div {
+  width: 45%;
+}
+
+#card #container1 #cont1-esq {
+  padding-right: 50px;
+}
+
+#card #container1 #cont1-esq .lt-texto {
+  color: #0974B0;
+  font-size: 16px;
+  text-shadow:0px 0px 10px #0974B0;
+}
+
+#card #container1 #cont1-esq p {
+  color: #FFFFFF;
+}
+
+#card #container1 #cont1-esq h2 {
+  color: #FFFFFF;
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+#card #container1 #cont1-dir {
+  display: flex;
+  justify-content: right;
+}
+
+#card #container1 #cont1-dir img {
+  width: 500px;
+}
+/*Fim do CONTAINER1*/
+
+/*Começo do CONTAINER2*/
+#card #container2 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+
+#card #container2 #box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+#card #container2 #box div {
+  width: 50%;
+}
+
+/* ESQUERDA */
+#card #container2 #box #cont2-esq{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#card #container2 #box #cont2-esq .caixa {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#card #container2 #box #cont2-esq .caixa .box-circle{
+  width: auto;
+}
+
+#card #container2 #box #cont2-esq .caixa .box-circle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#card #container2 #box #cont2-esq .caixa .box-circle .box-itens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+}
+
+#card #container2 #box #cont2-esq .caixa .box-circle .box-itens svg {
+  width: 120px;
+  height: 120px;
+  /* margin: 50px 0; */
+  position: absolute;
+  top: 50;
+  left: 50;
+}
+
+#card #container2 #box #cont2-esq .caixa .box-circle .box-itens svg circle {
+  width: 140px;
+  height: 140px;
+  fill: none;
+  stroke: #0974B0;
+  stroke-width: 10;
+  transform: translate(10px, 10px);
+  stroke-dasharray: 320;
+  stroke-dashoffset: 320;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 1);
+
+}
+
+#card #container2 #box #cont2-esq .caixa .box-circle .box-itens svg .estatico {
+  stroke-dashoffset: 0;
+  stroke: #B7B7B7;
+}
+
+#card #container2 #box #cont2-esq .caixa .box-circle .box-itens svg .progresso {
+  stroke: #0974B0;
+  border-radius: 50%;
+  transition: stroke-dashoffset 7s;
+}
+
+#card #container2 #box #cont2-esq .caixa .box-circle .box-itens .icon {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  top: 50;
+  left: 50;
+}
+
+#card #container2 #box #cont2-esq .caixa .box-circle .box-itens .icon img {
+  width: 40px;
+}
+
+#card #container2 #box #cont2-esq .caixa .box-circle .box-itens .icon p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0974B0;
+  display: block;
+  
+}
+
+
+
+/*DIREITA*/
+
+#card #container2 #box #cont2-dir {
+  margin-left: 50px;
+}
+
+#card #container2 #box #cont2-dir .lt-texto {
+  color: #0974B0;
+  font-size: 16px;
+}
+
+#card #container2 #box #cont2-dir h2 {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+/* #card #container2 #box #cont2-dir p {
+
+} */
+
+/*Fim do CONTAINER2*/

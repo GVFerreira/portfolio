@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    cursor: url(img/ak.png) 30 30, auto;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.tamanho1 {
+    width: 5%;
+}
+
+.tamanho2 {
+    width: 6%;
+}
+
+.mirage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/mirage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cache {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/cache.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.inferno {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/inferno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#painel {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+}
+
+.helmet {
+    width: 30px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#container-gameover {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #caixa-placar {
+    background-color: #fff;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#placar {
+    font-weight: bold;
+    font-size: 25px;
+} */
+
+#img-gameover {
+    width: 800px;
+}
+
+#btn-restart {
+    height: 50px;
+    width: 250px;
+    background-color: #212121;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+#btn-restart:hover {
+    font-size: 28px;
+    background-color: #B7B7B7;
+}
+
+#container-iniciar {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-iniciar {
+    width: 800px;
+}
+
+#start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start select {
+    width: 250px;
+    margin-bottom: 20px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#btn-start {
+    height: 50px;
+    width: 250px;
+    background-color: #212121;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+#btn-start:hover {
+    font-size: 28px;
+    background-color: #B7B7B7;
+}

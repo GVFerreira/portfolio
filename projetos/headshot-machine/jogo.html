@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Headshot Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="corpo" onresize="tamanhoTela()">
+
+    <div id="painel">
+        <div id="vidas">
+            <img id="vida1" class="helmet" src="img/helmet.png">
+            <img id="vida2" class="helmet" src="img/helmet.png">
+            <img id="vida3" class="helmet" src="img/helmet.png">
+        </div>
+        <div id="tempo">
+            <p>Tempo de jogo: <span id="cronometro" class="cronometro">0</span></p>
+        </div>
+    </div>
+    <script>
+        var background = document.getElementById('corpo');
+        background.className = mudarFundo();
+
+        var pontuacao = document.getElementById('cronometro').value;
+
+        var meuStorage = window.localStorage.setItem("meu-tempo", pontuacao);
+
+        setInterval(function() { 
+            posicaoTela()
+        }, criaBotTempo);
+    </script>
+
+</body>
+</html>

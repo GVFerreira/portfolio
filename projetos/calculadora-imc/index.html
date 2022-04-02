@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC - Projeto JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Calculadora IMC</h1>
+        <p>(Índice de Massa Corporal)</p>
+        <form action="" method="POST">
+            <div class="form_itens">
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Digite seu nome" name="nome" id="nome" autofocus>
+            </div>
+
+            <div class="form_itens">
+                <label for="peso">Peso:</label>
+                <input type="text" placeholder="Digite seu peso. Ex.: 00.000" name="peso" id="peso">
+            </div>
+
+            <div class="form_itens">
+                <label for="altura">Altura:</label>
+                <input type="number" placeholder="Digite sua altura em centímetros" name="altura" id="altura">
+            </div>
+
+            <div class="form_itens">
+                <label for="massa">Resultado:</label>
+                <input type="text" name="massa" id="massa" disabled>
+            </div>
+
+            <input type="button" id="enviar" value="Calcular Massa Corporal" onclick="calcularMassa('nome', 'peso', 'altura', 'massa')">
+
+            <span id="mensagem"></span>
+
+
+        </form>
+    </div>
+
+</body>
+</html>

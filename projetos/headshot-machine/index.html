@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Headshot Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script>
+        function iniciarGame() {
+            var nivel = document.getElementById('nivel').value;
+
+            if(nivel === "") {
+                alert("Selecione um nível para inicar o jogo");
+                return false;
+            }
+
+            window.location.href = "jogo.html?" + nivel;
+
+        }
+    </script>
+</head>
+<body id="corpo">
+    <div id="container-iniciar">
+        <div id="iniciar">
+            <img id="img-iniciar" src="img/iniciar.png">
+        </div>
+        <div id="start">
+            <select id="nivel">
+                <option value="">--Selecione o nível--</option>
+                <option value="normal">Normal</option>
+                <option value="dificil">Difícil</option>
+                <option value="coldzera">Coldzera</option>
+            </select>
+            <button id="btn-start" onclick="iniciarGame()">Iniciar game</button>
+        </div>
+    </div>
+</body>
+</html>
