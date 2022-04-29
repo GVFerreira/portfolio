@@ -1,6 +1,26 @@
-
 let exec1vez = 0
+
 function comecarProgresso() {
+let minhaDiv = document.querySelector("#container2")
+let alturaDiv = minhaDiv.offsetHeight //pega a altura da div
+let alturaJanela = window.innerHeight //pega a altura da janela
+let posicaoDiv = minhaDiv.getBoundingClientRect().top // pega o valor do scroll
+
+if(posicaoDiv < (alturaDiv/2)){
+  let circulosProgresso = [
+    ["circle1b", 70],
+    ["circle2b", 50],
+    ["circle3b", 45],
+    ["circle4b", 35],
+    ["circle5b", 20],
+    ["circle6b", 70]
+  ]
+  for(let i = 0; i < circulosProgresso.length; i++){
+    let circulos = document.getElementById(circulosProgresso[i][0])
+    circulos.style.strokeDashoffset = 320 - (320 * circulosProgresso[i][1]) / 100
+  }
+
+  /*
   let circle1 = document.getElementById('circle1b');
   circle1b.style.strokeDashoffset = 320 - (320 * 70) / 100;
 
@@ -18,8 +38,8 @@ function comecarProgresso() {
 
   let circle6 = document.getElementById('circle6b');
   circle6b.style.strokeDashoffset = 320 - (320 * 70) / 100;
-
-  
+  */
+    
   while(exec1vez == 0) {
     let htmlCount = 0
     let htmlInterval = setInterval(() => {
@@ -82,13 +102,11 @@ function comecarProgresso() {
     }, 75)
 
     exec1vez++
+    }
   }
 }
-    
 
-
-
-
+//ROALGEM SUAVE////////////////////////////////////////////////
 
 const menuItems = document.querySelectorAll('#menu a[href^="#"]');
 
@@ -136,4 +154,4 @@ function smoothScrollTo(endX, endY, duration) {
     }
     window.scroll(newX, newY);
   }, 1000 / 120);
-};
+}
