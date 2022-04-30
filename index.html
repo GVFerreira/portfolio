@@ -9,7 +9,10 @@
 	    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
         <script src="script.js" defer></script>
+        <script src="modal.js" defer></script>
     </head>
     <body onscroll="comecarProgresso()">
         <header>
@@ -17,13 +20,13 @@
                 <ul>
                     <li><a href="#container1">Home</a></li>
                     <li><a href="#container2">Habilidades</a></li>
-                    <li><a href="">Portfólio</a></li>
-                    <li id="btn-contato"><a href="">Contato</a></li>
+                    <li><a href="#container3">Portfólio</a></li>
+                    <li onclick="abrirModal()" id="btn-contato"><a>Contato</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="card">
-            <div id="container1">
+        <main id="card">
+            <section id="container1">
                 <div id="cont1-esq">
                     <p class="lt-texto">- Quem sou eu?</p>
                     <h2>Eu sou, Gustavo!</h2>
@@ -32,9 +35,9 @@
                 <div id="cont1-dir">
                     <img src="img/main.png" alt="Minha foto. Estou de camisa polo azul. Atrás de mim há um círculo azul, com 4 linguagens de programação usadas na web: HTML, CSS, JavaScript e PHP.">
                 </div>
-            </div>
-            <div id="container2" >
-                <div id="box">
+            </section>
+            <section id="container2" >
+                <div id="box" class="box">
                     <div id="cont2-esq">
                         <div class="caixa">
                             <div class="box-circle">
@@ -109,7 +112,91 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel vitae asperiores sapiente necessitatibus earum aperiam nobis provident, reiciendis quas fuga fugit suscipit, ad ut nemo. Eaque consequuntur facilis id repudiandae.</p>
                     </div>
                 </div>
+            </section>
+            <section id="container3">
+                <div class="box">
+                    <div id="cont-item1" class="cont-item">
+                        <div class="cont-img">
+                            <img src="./img/calculadora.png" alt="">
+                        </div>
+                        <div class="cont-text">
+                            <p class="lt-texto">- JavaScript</p>
+                            <h2>Calculadora</h2>
+                            <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nostrum ex eos ducimus corrupti perferendis minima necessitatibus cum accusamus cupiditate!</p>
+                            <a href="./projetos/calculadora/index.html" target="_blank"><button class="btn-confira">Confira</button></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <div id="cont-item2" class="cont-item">
+                        <div class="cont-img">
+                            <img src="./img/calculadora-imc.png" alt="">
+                        </div>
+                        <div class="cont-text">
+                            <p class="lt-texto">- JavaScript</p>
+                            <h2>Calculadora IMC</h2>
+                            <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nostrum ex eos ducimus corrupti perferendis minima necessitatibus cum accusamus cupiditate!</p>
+                            <a href="./projetos/calculadora-imc/index.html" target="_blank"><button class="btn-confira">Confira</button></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <div id="cont-item1" class="cont-item">
+                        <div class="cont-img">
+                            <img src="./img/headshot-machine.png" alt="">
+                        </div>
+                        <div class="cont-text">
+                            <p class="lt-texto">- JavaScript</p>
+                            <h2>Headshot Machine</h2>
+                            <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nostrum ex eos ducimus corrupti perferendis minima necessitatibus cum accusamus cupiditate!</p>
+                            <a href="./projetos/headshot-machine/index.html" target="_blank"><button class="btn-confira">Confira</button></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <div id="cont-item2" class="cont-item">
+                        <div class="cont-img">
+                            <img src="./img/blognode.png" alt="">
+                        </div>
+                        <div class="cont-text">
+                            <p class="lt-texto">- Node.JS</p>
+                            <h2>Blog Node</h2>
+                            <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nostrum ex eos ducimus corrupti perferendis minima necessitatibus cum accusamus cupiditate!</p>
+                            <a href="https://blognodegustavo.herokuapp.com/" target="_blank"><button class="btn-confira">Confira</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div id="box-footer">
+                <nav>
+                    <ul>
+                        <li><a href="https://github.com/GVFerreira" target="_blank"><div><img src="./img/github.png" alt=""></div></a></li>
+                        <li><a href="https://linkedin.com/in/gustavo-vasconcelos-ferreira" target="_blank"><div><img src="./img/linkedin.png" alt=""></div></a></li>
+                        <li><a href="https://instagram.com/vasconcelosgux" target="_blank"><div><img src="./img/instagram.png" alt=""></div></a></li>
+                        <li><a href="https://www.facebook.com/gustavo.vasconcelos.3591" target="_blank"><div><img src="./img/facebook.png" alt=""></div></a></li>
+                        
+                    </ul>
+                </nav>
             </div>
-        </section>
+        </footer>
+        <div id="escuro"></div>
+        <div id="modal">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Entre em contato comigo</h2>
+                </div>
+                <div class="card-body">
+                    <p>E-mail: <a href="mailto:gvasconcelos220@gmail.com" target="_blank">GVasconcelos220@gmail.com</a></p>
+                    <p>Telefone: <a href="tel:+5511984276556" target="_blank">+55 (11) 98427-6556</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/gustavo-vasconcelos-ferreira" target="_blank"> Gustavo V. Ferreira</a></p>
+                    <a onclick="fecharModal()"><button>Fechar</button></a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

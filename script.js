@@ -19,26 +19,6 @@ if(posicaoDiv < (alturaDiv/2)){
     let circulos = document.getElementById(circulosProgresso[i][0])
     circulos.style.strokeDashoffset = 320 - (320 * circulosProgresso[i][1]) / 100
   }
-
-  /*
-  let circle1 = document.getElementById('circle1b');
-  circle1b.style.strokeDashoffset = 320 - (320 * 70) / 100;
-
-  let circle2 = document.getElementById('circle2b');
-  circle2b.style.strokeDashoffset = 320 - (320 * 50) / 100;
-
-  let circle3 = document.getElementById('circle3b');
-  circle3b.style.strokeDashoffset = 320 - (320 * 45) / 100;
-
-  let circle4 = document.getElementById('circle4b');
-  circle4b.style.strokeDashoffset = 320 - (320 * 35) / 100;
-
-  let circle5 = document.getElementById('circle5b');
-  circle5b.style.strokeDashoffset = 320 - (320 * 20) / 100;
-
-  let circle6 = document.getElementById('circle6b');
-  circle6b.style.strokeDashoffset = 320 - (320 * 70) / 100;
-  */
     
   while(exec1vez == 0) {
     let htmlCount = 0
