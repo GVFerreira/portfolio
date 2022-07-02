@@ -87,7 +87,6 @@ if(posicaoDiv < (alturaDiv/2)){
 }
 
 //ROALGEM SUAVE////////////////////////////////////////////////
-
 const menuItems = document.querySelectorAll('#menu a[href^="#"]');
 
 function getScrollTopByHref(element) {

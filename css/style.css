@@ -107,10 +107,10 @@ header #menu ul #btn-contato:hover{
   color: #FFFFFF;
 }
 
-#card #container1 #cont1-esq h2 {
+#card #container1 #cont1-esq h1 {
   color: #FFFFFF;
   font-size: 40px;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 #card #container1 #cont1-dir {

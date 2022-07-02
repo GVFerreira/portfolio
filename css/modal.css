@@ -30,6 +30,7 @@
 #modal .card .card-header{
     background-color: #B7B7B7;
     padding: 20px;
+    border-bottom: 2px solid #616161;
     border-radius: 15px 15px 0 0;
 }
 
@@ -44,7 +45,7 @@
 
 #modal .card .card-body button{
     background-color: #0974B0;
-    padding: 8px;
+    padding: 10px 25px;
     margin-top: 20px;
     color: white;
     font-size: 25px;

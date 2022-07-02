@@ -1,0 +1,49 @@
+@media(max-width: 768px) {
+    header #menu ul {
+        width: 100%;
+    }
+
+    #card #container1{
+        width: 90%;
+        margin-top: 120px;
+    }
+
+    #card #container1 #cont1-dir img {
+        width: 100%;
+    }
+
+    #card #container2 {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #card #container2 .box {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #card #container2 #box #cont2-esq .caixa .box-circle .box-itens {
+        transform: scale(0.7);
+    }
+
+    #card #container3 {
+        margin: 0
+    }
+
+    #card #container3 .box {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #card #container3 .box .cont-item .cont-img img {
+        display: none;
+    }
+
+    #card #container3 .box .cont-item .cont-text {
+        width: 100%;
+        padding: 0 40px
+    }
+    footer #box-footer nav ul {
+        width: 80%;
+    }
+}
